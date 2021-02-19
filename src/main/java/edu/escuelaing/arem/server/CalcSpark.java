@@ -18,6 +18,7 @@ public class CalcSpark {
             numero = calc.Calcular (numero,tipo);
             JSONObject json = new JSONObject ();
             json.put ("numero",numero);
+            json.put ("tipo",tipo);
             return json;
         });
     }
